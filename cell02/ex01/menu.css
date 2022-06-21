@@ -1,0 +1,25 @@
+.dropdown {
+	position: relative;
+	text-align: center;
+}
+
+.dropdown-content {
+	display: none;
+	/* background-color: #777; */
+	text-align: center;
+	padding-left: 33%;
+	padding-right: 33%;
+	
+}
+
+.dropdown-content p:hover {
+	background-color: rgb(140, 134, 134);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dorpbtn {
+	background-color: #777;
+}
