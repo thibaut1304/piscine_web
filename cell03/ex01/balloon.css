@@ -1,0 +1,18 @@
+.global {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.ballon {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border-radius: 100%;
+}

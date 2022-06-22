@@ -1,0 +1,26 @@
+.tab {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	border:solid 1px;
+}
+
+.login, .contact, .school, .bio, .title, .reseaux, .photo {
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.big_container {
+	display: flex;
+}
+
+button {
+	background-color: black;
+	width: 100%;
+	color: white;
+}

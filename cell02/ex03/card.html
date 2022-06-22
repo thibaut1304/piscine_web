@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./card.css">
+	<title>User Profil Card</title>
+</head>
+<body>
+	<div class="title">
+		<h1>User Profil Card</h1>
+	</div>
+	<div class="big_container">
+		<table class="tab">
+			<tr>
+				<td class="photo">
+					<img src="./img/thhusser.jpg" width="100px">
+				</td>
+			</tr>
+			<tr>
+				<td class="login">
+					thhusser
+				</td>
+			</tr>
+			<tr>
+				<td class="bio">
+					Level 9 in discovery
+				</td>
+			</tr>
+			<tr>
+				<td class="school">
+					42 paris
+				</td>
+			</tr>
+			<tr>
+				<td class="reseaux">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADIUlEQVRoge3ZX4hVVRTH8Y8zQU6l/RPLosiKwiQopKckQYrqQSiIIaGg3gxFIciC9CGKHlIk0JeiwDeVguilhtCXCCvoH4hREP3DwrJiHPszo87cHtYd5nQ8c+6/feYMdH+wuOfee/Ze68vZZ+2196avvvr6X2hB3QHghqYtwRiO4Qgm6wyqXS3CdnyNRoH9ilcEYJmuxJ1Ff9yaKtISPYhfFAPkbRwvYDDXx3XYg39we97BMvyFhysJP7QVU9qDyNpbWI1n8IEYdg28UeTkyeafE7inAohHuwAos5+xtMjRO5mbxvFQQohr8XdCiBNY2ez7ItybdfZ97uZJbE4EsjchxOcYxgbsw5+4L+tsdJaG+3FxDxCLxRNOBTKZ+/5U3uHxksbfYm2XIMMJIfL2UpHDD9to+KZIfZ3ouQoApvDsbA53ttnJOF4z87K10quJIc7ggTKHd3TY4RTew+O4rKTf3YlBxsogpnWoy85PN9s+j3W42kwdtzUxyGg7ILdIl+8nREr/LjHIsTKAbBW83rkpbj7Zl0UAA83PQVE6b8JBPCIKsvmoH1rdcMIM9Y/K55U6bU9R8AOZ608z19fgilbkNal0aMG7cxRIrzrc6oZLcFL9Q6fMTjp3kYX/PpFRvNiKtmaNaHMtP6j7SXEubLgT6kViOVl30HkbE4uojnQ+Xja/JsbdnUJktVKs7v6oGWIKN5cFet4sv6/CY02A3/Gx2JAozBhzoANiD6xjDeE39Q+nhqisb+wGYlob5wFEA7t6gSCG0UjNEN/gwl5BiN2TwzVBnMWaFBDTGsLrutvq7MWeTgmR1Wq8LRb/VUMcMAdHHotxv9hTqmLCHBETcuUawBaxVZka4qAYypUDrMNHFQA0RAVR6ZO4Ck/gq4oAzkjwYi/Abc0OT4nK91IsF2XKWqzo1UmJjopS6JMUnS0VC/rTqs9G0zaKbViYAiCvm8R5w0TFADtweRUAeS0RBzyfJQr+LN4XQ+iCqoJuNemswN24S5yeXt9GmzGRGL4Q6fSQWA5Uqk5nzyFxHrhMJIaFYiieEgDH8VPKAPvqq2b9C53t8lAzqxI/AAAAAElFTkSuQmCC">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACbElEQVRoge3YTYhNYRzH8Y/BKG/NYihpNJOsJDGDklgoSWGrrCxESNkrsZBSiljMxsLbwsrLxsZCTMqCIkpRmA3TGKHxMo07Fue5zTXm3nnOneueOzrfejqn5/x+z/3977nnec59yMmpG8twFi/wNbSnOIXFGeZKxR58x0iZ9hnbM0sXyUb8QgGXsQ4tmI9OXAzXfmBFRhmjuCP51k9U0JwOmut1SVQlnyQhF1bQLAmavrokSkFTyXkhHJsr6IuapgqaTCgNdC8cj1TQHw7Hnn8TpzaslMxYBVw1+rDPwurQV8Aw1maUMZqt+Kj89PsNuzNLl5JWHJX8fPokC+IznEFHhrlypiw9yj8bY9v9GnlnYhvO4xF6JW8OA3iOa9iFuWkKiQ1SbJPxTsNevInUv8d+TE9TSDW6tN67JecvcQybsEiyILdgOQ75827fxpxqAsbq0npH8Ao7IzywAx+C76FkbUsVMFYX6x0KuiuYF6EvZSleB/+5tAFjdbHefTgoeUaqYZVkMihgfZqAsbpYby04Hj7rRjnBVCmkFYOSP4Htxc6sXsfb0S1ZN4bwDhfQFuHtl8xeTdg8nqBed2QLvpR4StsANkSMcSDoL8UGjNXFejuMFnETXZJ1oQu3Qn8/FkwwTlfQPo4NGKuL9XYbLWI8isWcnGCctqB7GxswVhfr7Q26zjLX14TrTyYYZ3bQDcYGjNXFeoeDrty+QHO4/rPKHKnC1OIVZbKav3QNtxtSLXkhjUZeSKORF9Jo5IU0GnkhjUZeSKPx3xQyY5y+yeyG1HInJdVYpXfkQQrf2N34yXjHUsuxcnJyAr8B348Si+pXIRAAAAAASUVORK5CYII=">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABTklEQVRoge2ZP07DMBSHvyCWCsTIwtYjlN6CVh0YOFBViZsw9AaVoD0Ac9fOXUmEkBjK0CJR46ovjv+84X3SG2Il9u+Tk9hKwDCMUCbACmiAXeFqgCUwbivxrCD8qZpJJSYKwp6rkURkpSDouXpzQ1cekRq4lhgXpAZu/jb4RHZ5snTmKPtFqRSxMRFtmEhHGmAKDNi/Ia+APvAELGINknoN2BxCd81QVOQbuI+UoajIiyRAiEjuZ2SequPcIu+etkdgDXzS4rZxyb1F6QFfTtsWuA3oqzp5cCClSMzxbK+lmtQilVOSc+5CBtI4I5IF8x8mkpBhyEUaRQYhF13GTuHgrhHJ1i2NMxKEiWjDRLRhItowEW2YiDZ8Ik32FO35cBt8Ir5PNtoQZRyT7kujj5B+HqTGs4QyXWsqlfhlxP7vaa0gfA280mImDMM45ge3IoV4BJUk3gAAAABJRU5ErkJggg==">
+				</td>
+			</tr>
+			<tr>
+				<td class="contact">
+					<a href="https://github.com/thibaut1304/thibaut1304" target="_blank"><button>Contact</button></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
