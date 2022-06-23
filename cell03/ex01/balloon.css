@@ -1,15 +1,15 @@
 .global {
 	display: flex;
+	position: relative;
 	width: 100vw;
 	height: 100vh;
-	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 
-.ballon {
+#ballon {
 	display: flex;
 	position: absolute;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 	width: 200px;
 	height: 200px;
