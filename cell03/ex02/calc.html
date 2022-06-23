@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc</title>
+	<style>
+		.all, .tab{
+			width: 100vw;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<table class="tab">
+			<tr>
+				<td>
+					<input id="deno" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="operation" id="ope">
+						<option value="">--Please choose an option--</option>
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+						<option value="%">%</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="num" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Try me!" onclick="denominateur()">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		function popup() {
+			alert("Please, use me...") ;         
+		}
+
+		setInterval(function() { popup(); }, 30000);
+
+		function denominateur() {
+			let deno = document.getElementById('deno').value;
+			let op = document.getElementById('ope').value;
+			let num = document.getElementById('num').value;
+			let a = Number(deno);
+			let b = Number(num);
+			if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
+				alert("Error :(");
+				return ;
+			}
+			if (op === '/' || op === '%') {
+				if (b == 0) {
+					alert("It’s over 9000!");
+					console.log("It’s over 9000!");
+					return ;
+				}
+			}
+			let ret = 0;
+			if (op === '+') {
+				ret = a + b;
+				console.log("Resultat : " + ret);
+				alert("Resultat : " + ret);
+			}
+			else if (op === '-') {
+				ret = a - b;
+				console.log("Resultat : " + ret);
+				alert(ret);
+			}
+			else if (op === "*") {
+				ret = a * b;
+				console.log("Resultat : " + ret);
+				alert(ret);
+			}
+			else if (op === "%") {
+				ret = a % b;
+				console.log("Resultat : " + ret);
+				alert(ret);
+			}
+			else if (op === "/") {
+				ret = a / b;
+				console.log("Resultat : " + ret);
+				alert(ret);
+			}
+		}
+	</script>
+</body>
+</html>
