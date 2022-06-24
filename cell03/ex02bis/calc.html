@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc-JQuerry</title>
+	<style>
+		.all, .tab{
+			width: 100vw;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<table class="tab">
+			<tr>
+				<td>
+					<input id="deno" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="operation" id="op">
+						<option value="">--Please choose an option--</option>
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+						<option value="%">%</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="num" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class="try" type="submit" value="Try me!">
+				</td>
+			</tr>
+		</table>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	$(".try").click(function () {
+		var deno = $("#deno").val();
+		var num = $("#num").val();
+		var op = $("#op").val();
+		if (isNaN(deno) || isNaN(num) || deno < 0 || num < 0) {
+			alert("Error:(");
+			return ;
+		}
+		let a = Number(deno);
+		let b = Number(num);
+		if (op === '/' || op === '%') {
+				if (b == 0) {
+					alert("It’s over 9000!");
+					console.log("It’s over 9000!");
+					return ;
+				}
+		}
+		let ret = 0;
+		if (op === '+') {
+			ret = a + b;
+			console.log("Resultat : " + ret);
+			alert("Resultat : " + ret);
+		}
+		else if (op === '-') {
+			ret = a - b;
+			console.log("Resultat : " + ret);
+			alert(ret);
+		}
+		else if (op === "*") {
+			ret = a * b;
+			console.log("Resultat : " + ret);
+			alert(ret);
+		}
+		else if (op === "%") {
+			ret = a % b;
+			console.log("Resultat : " + ret);
+			alert(ret);
+		}
+		else if (op === "/") {
+			ret = a / b;
+			console.log("Resultat : " + ret);
+			alert(ret);
+		}
+	});
+</script>
+</body>
+</html>

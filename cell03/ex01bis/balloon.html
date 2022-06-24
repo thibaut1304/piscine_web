@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ballon-JQuerry</title>
+	<style>
+		.all {
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+		.ballon {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="ballon"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		var i = 0;
+		$(".ballon").click(function () {
+			var color = ["red", "green", "blue"]; 
+			$(this).css("background-color", color[i%3]);
+			var width = $(this).css("width");
+			if (parseInt(width) > 420) {
+				$(this).css("width", "200px");
+				$(this).css("height", "200px");
+				return ;
+			}
+			$(this).css("width", parseInt(width) + 10 + "px");
+			$(this).css("height", parseInt(width) + 10 + "px");
+			i++;
+		});
+		var y = 0;
+		$(".ballon").mouseleave(function() {
+			var color = ["blue", "green", "red"]; 
+			var width = $(this).css("width");
+			$(this).css("background-color", color[y%3]);
+			y++;
+			if (parseInt(width) > 200) {
+				$(this).css("width", parseInt(width) - 5 + "px");
+				$(this).css("height", parseInt(width) - 5 + "px");
+			}
+		});
+	</script>
+</body>
+</html>
